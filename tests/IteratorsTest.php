@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase;
+namespace tests\Mamazu\IteratorTools;
 
-include __DIR__.'/../src/GeneratorFunctions.php';
+use PHPUnit\Framework\TestCase;
+use Mamazu\IteratorTools\IteratorTools;
 
 class GeneratorFunctionsTest extends TestCase {
     public function test_iterator_filter(): void {

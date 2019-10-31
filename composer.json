@@ -2,8 +2,6 @@
     "name": "mamazu/iterator-tools",
     "description": "Some tools for dealing with iterator",
     "type": "library",
-    "require-dev": {
-    },
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +10,19 @@
         }
     ],
     "require": {
-        "php": "^7.0",
+        "php": "^7.0"
+    },
+    "require-dev": {
         "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mamazu\\IteratorTools\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\Mamazu\\IteratorTools\\": "tests"
+        }
     }
 }

@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Mamazu\IteratorTools;
+
 class IteratorTools {
     public function iterator_filter(iterable $iterable, callable $func): iterable {
         foreach($iterable as $item) {
