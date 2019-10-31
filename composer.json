@@ -1,0 +1,17 @@
+{
+    "name": "mamazu/iterator-tools",
+    "description": "Some tools for dealing with iterator",
+    "type": "library",
+    "require-dev": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mamazu",
+            "email": "14860264+mamazu@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.4"
+    }
+}
