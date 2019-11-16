@@ -18,7 +18,10 @@
     "autoload": {
         "psr-4": {
             "Mamazu\\IteratorTools\\": "src"
-        }
+        },
+        "files": [
+            "src/IteratorTools.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

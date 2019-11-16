@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace tests\Mamazu\IteratorTools;
 
-use iterable;
 use PHPUnit\Framework\TestCase;
 use function Mamazu\IteratorTools\array_to_iterator;
 use function Mamazu\IteratorTools\iterator_filter;
