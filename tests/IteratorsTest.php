@@ -66,6 +66,24 @@ class IteratorsTest extends TestCase {
         $this->assertEquals($this->unroll($result), [1, 2, 3, 4, 5, 6, 7, 8, 9]);
     }
 
+    public function test_range_inclusive(): void
+    {
+        $result = range(1, 10);
+        $this->assertEquals($this->unroll($result), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    }
+
+    public function test_range_inclusive_with_step(): void
+    {
+        $result = range(0, 10, 2);
+        $this->assertEquals($this->unroll($result), [0, 2, 4, 6, 8, 10]);
+    }
+
+    public function test_range_inclusive_with_step_as_float(): void
+    {
+        $result = range(0, 5, 1.5);
+        $this->assertEquals($this->unroll($result), [0.0, 1.5, 3.0, 4.5]);
+    }
+
     private function unroll(iterable $iterable): array {
         $array = [];
         foreach($iterable as $item) {

@@ -16,3 +16,4 @@ All array functions are now also available for iterators
 
 Making non-iterator functions use iterators
 * `file(string $fileName): iterable`
+* `range(float $start, float float, float $step): iterable`

@@ -42,3 +42,10 @@ function file(string $fileName): iterable
         yield $line;
     }
 }
+
+function range(float $start, float $end, float $step = 1): iterable
+{
+    for ($i = $start; $i <= $end; $i += $step) {
+        yield $i;
+    }
+}
