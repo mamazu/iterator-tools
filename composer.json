@@ -27,5 +27,8 @@
         "psr-4": {
             "tests\\Mamazu\\IteratorTools\\": "tests"
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests/"
     }
 }
